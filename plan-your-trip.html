@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan Your Zion Trip: Request Lodging and Tour Help</title>
+<meta name="description" content="Send your dates and interests and get help finding lodging, guided tours, gear rentals, and transportation for a Zion National Park trip.">
+
+<link rel="canonical" href="https://zionnationalpark.org/plan-your-trip.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZionNationalPark.org">
+<meta property="og:title" content="Plan Your Zion Trip: Request Lodging and Tour Help">
+<meta property="og:description" content="Send your dates and interests and get help finding lodging, guided tours, gear rentals, and transportation for a Zion National Park trip.">
+<meta property="og:url" content="https://zionnationalpark.org/plan-your-trip.html">
+<meta property="og:image" content="https://zionnationalpark.org/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b2430">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="notice"><div class="wrap">Independent visitor guide. Not affiliated with the National Park Service or any government agency. Official park information: <a href="https://www.nps.gov/zion" rel="noopener">nps.gov/zion</a></div></div>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#1B2430"/><circle cx="42" cy="22" r="7" fill="#D6A03B"/><path d="M0,64 L0,26 L8,24 L14,28 L19,12 L27,10 L31,24 L31,64 Z" fill="#B5432A"/><path d="M64,64 L64,34 L56,32 L50,36 L44,26 L37,30 L33,40 L33,64 Z" fill="#8F3320"/><rect x="0" y="54" width="64" height="10" fill="#6F2F25"/></svg><span><span class="brand-name">ZionNationalPark.org</span><span class="brand-sub">Independent visitor guide</span></span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="hikes.html">Hikes</a><a href="when-to-visit.html">When to visit</a><a href="plan-your-stay.html">Stay and tours</a><a class="btn" href="plan-your-trip.html" aria-current="page">Plan my trip</a></nav>
+</div>
+</header>
+<main id="main">
+
+<section class="page-head">
+<img src="images/header-plan.jpg" data-fallback="images/art/header-plan.svg" alt="A canyon at golden hour" width="1600" height="500" fetchpriority="high">
+<div class="wrap">
+<h1>Plan your Zion trip</h1>
+<p>Tell us about your visit and what you need help with.</p>
+</div>
+</section>
+<div class="strata" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<section class="section">
+<div class="wrap form-layout">
+<form id="lead-form" class="lead-form" novalidate>
+<input type="hidden" name="access_key" id="access_key" value="">
+<input type="hidden" name="subject" value="New Zion trip request">
+<input type="hidden" name="from_name" value="ZionNationalPark.org">
+<input type="hidden" name="site" value="zionnationalpark.org">
+<input type="hidden" name="landing_page" id="landing_page" value="">
+<input type="hidden" name="referrer" id="referrer" value="">
+<div class="hp" aria-hidden="true"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></div>
+
+<div class="field-row">
+<div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required><div class="error" role="alert">Enter your name.</div></div>
+<div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required><div class="error" role="alert">Enter an email address like name@example.com.</div></div>
+</div>
+<div class="field-row">
+<div class="field"><label for="phone">Phone <span class="hint">(optional)</span></label><input type="tel" id="phone" name="phone" autocomplete="tel"></div>
+<div class="field"><label for="interest">I need help with</label>
+<select id="interest" name="interest" required>
+<option value="">Choose one</option>
+<option value="Lodging near Zion" data-key="lodging">Lodging near Zion</option>
+<option value="Guided tours or canyoneering" data-key="tours">Guided tours or canyoneering</option>
+<option value="Narrows gear rental" data-key="gear">Narrows gear rental</option>
+<option value="Shuttles and transportation" data-key="transport">Shuttles and transportation</option>
+<option value="Itinerary planning" data-key="itinerary">Itinerary planning</option>
+<option value="Something else" data-key="other">Something else</option>
+</select><div class="error" role="alert">Choose what you need help with.</div></div>
+</div>
+<div class="field-row">
+<div class="field"><label for="dates">Travel dates <span class="hint">(optional)</span></label><input type="text" id="dates" name="travel_dates" placeholder="e.g. April 12 to 16, 2027"></div>
+<div class="field"><label for="group">Group size <span class="hint">(optional)</span></label>
+<select id="group" name="group_size"><option value="">Not sure yet</option><option>1</option><option>2</option><option>3 to 4</option><option>5 to 8</option><option>9 or more</option></select></div>
+</div>
+<div class="field"><label for="message">Anything else we should know? <span class="hint">(optional)</span></label><textarea id="message" name="message"></textarea></div>
+<div class="field"><div class="check"><input type="checkbox" id="consent" name="consent" value="yes" required><label for="consent" style="font-weight:400;font-family:var(--body);margin:0">I agree that ZionNationalPark.org may share my request with travel providers who can help, and may contact me about it. See the <a href="privacy.html">privacy policy</a>.</label></div><div class="error" role="alert">Check the box to agree before sending.</div></div>
+<button class="btn" type="submit">Send my request</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+<noscript><p class="fine">This form needs JavaScript. Please turn it on and reload the page.</p></noscript>
+<p class="fine">We use your details only to respond to your request, as described in the privacy policy.</p>
+</form>
+
+<aside>
+<h2>What happens next</h2>
+<ol class="steps">
+<li><strong>You send the form</strong>It takes about a minute.</li>
+<li><strong>Your request is reviewed</strong>We read every request and match it to what you asked for.</li>
+<li><strong>Providers may reply</strong>If a lodging or tour provider can help, they may email you directly.</li>
+</ol>
+<div class="callout"><p><strong>Looking for official information?</strong> Permits, alerts, and fees come from the National Park Service at <a href="https://www.nps.gov/zion" rel="noopener">nps.gov/zion</a>.</p></div>
+</aside>
+</div>
+</section>
+
+</main>
+<div class="strata strata--static" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<footer class="site-footer">
+<div class="wrap">
+<div>
+<h2>About this site</h2>
+<p>ZionNationalPark.org is an independent guide to visiting Zion National Park in southwest Utah. It is not the official park website. For alerts, permits, fees, and maps, use <a href="https://www.nps.gov/zion" rel="noopener">nps.gov/zion</a>.</p>
+</div>
+<div>
+<h2>Explore</h2>
+<ul>
+<li><a href="hikes.html">Hikes</a></li>
+<li><a href="when-to-visit.html">When to visit</a></li>
+<li><a href="plan-your-stay.html">Stay and tours</a></li>
+<li><a href="plan-your-trip.html">Plan my trip</a></li>
+</ul>
+</div>
+<div>
+<h2>Official sources</h2>
+<ul>
+<li><a href="https://www.nps.gov/zion" rel="noopener">National Park Service: Zion</a></li>
+<li><a href="https://www.recreation.gov" rel="noopener">Recreation.gov permits and campsites</a></li>
+<li><a href="about.html">About this guide</a></li>
+<li><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+</div>
+<div class="legal"><div class="wrap">
+<p>Information was last reviewed in October 2026. Conditions, trail access, permits, and fees change, so confirm details with the National Park Service before you travel. Images are illustrative and may be computer-generated.</p>
+<p>&copy; <span id="year">2026</span> ZionNationalPark.org. Zion National Park is a unit of the National Park Service.</p>
+</div></div>
+</footer>
+</body>
+</html>
