@@ -12,7 +12,7 @@
      Leave it empty to run with no analytics.
 */
 window.SITE_CONFIG = {
-  WEB3FORMS_ACCESS_KEY: "PASTE_YOUR_WEB3FORMS_KEY_HERE",
+  WEB3FORMS_ACCESS_KEY: "5e5a9349-03aa-4682-894f-dfc1ca966eef",
   GOOGLE_ANALYTICS_ID: "",
   SITE_NAME: "ZionNationalPark.org"
 };
