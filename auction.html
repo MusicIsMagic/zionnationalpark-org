@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZionNationalPark.org: Digital Property for Sale by Auction</title>
+<meta name="description" content="ZionNationalPark.org is offered as a complete digital property: the name, a finished visitor guide, and a working lead-capture form. Bids are open.">
+
+<link rel="canonical" href="https://zionnationalpark.org/auction.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZionNationalPark.org">
+<meta property="og:title" content="ZionNationalPark.org: Digital Property for Sale by Auction">
+<meta property="og:description" content="ZionNationalPark.org is offered as a complete digital property: the name, a finished visitor guide, and a working lead-capture form. Bids are open.">
+<meta property="og:url" content="https://zionnationalpark.org/auction.html">
+<meta property="og:image" content="https://zionnationalpark.org/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b2430">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/auction.js" defer></script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="notice"><div class="wrap">Independent visitor guide. Not affiliated with the National Park Service or any government agency. Official park information: <a href="https://www.nps.gov/zion" rel="noopener">nps.gov/zion</a></div></div>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#1B2430"/><circle cx="42" cy="22" r="7" fill="#D6A03B"/><path d="M0,64 L0,26 L8,24 L14,28 L19,12 L27,10 L31,24 L31,64 Z" fill="#B5432A"/><path d="M64,64 L64,34 L56,32 L50,36 L44,26 L37,30 L33,40 L33,64 Z" fill="#8F3320"/><rect x="0" y="54" width="64" height="10" fill="#6F2F25"/></svg><span><span class="brand-name">ZionNationalPark.org</span><span class="brand-sub">Independent visitor guide</span></span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="hikes.html">Hikes</a><a href="when-to-visit.html">When to visit</a><a href="plan-your-stay.html">Stay and tours</a><a class="btn" href="plan-your-trip.html">Plan my trip</a></nav>
+</div>
+</header>
+<main id="main">
+
+<section class="page-head">
+<img src="images/header-plan.jpg" data-fallback="images/art/header-plan.svg" alt="" width="1600" height="500" fetchpriority="high">
+<div class="wrap">
+<h1>ZionNationalPark.org is for sale</h1>
+<p>One complete digital property, offered to one buyer by open auction.</p>
+</div>
+</section>
+<div class="strata" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<section class="section">
+<div class="wrap form-layout">
+<div>
+<div id="a-banner" class="a-banner" hidden role="status"></div>
+
+<div class="auction-panel" id="auction-panel" aria-live="polite">
+<span class="a-status" id="a-status">Loading</span>
+<p class="a-label" id="a-label">Current high bid</p>
+<p class="a-amount" id="a-amount">&nbsp;</p>
+<p class="a-clock-label" id="a-clock-label"></p>
+<p class="a-clock" id="a-clock"></p>
+<p class="a-meta" id="a-meta"></p>
+<div class="a-history-wrap" id="a-history-wrap" hidden>
+<h3>Confirmed bids</h3>
+<ul class="a-history" id="a-history"></ul>
+</div>
+</div>
+
+<div id="bid-form-wrap" hidden>
+<form id="bid-form" class="lead-form" novalidate>
+<h2 style="margin-top:0">Place a bid</h2>
+<p class="fine" style="margin-top:0">Your next bid must be at least <strong id="a-min"></strong>. Your bid counts only after you confirm it by email.</p>
+<div class="hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+<div class="field-row">
+<div class="field"><label for="bid-name">Your name</label><input type="text" id="bid-name" name="name" autocomplete="name" required></div>
+<div class="field"><label for="bid-company">Company <span class="hint">(optional)</span></label><input type="text" id="bid-company" name="company" autocomplete="organization"></div>
+</div>
+<div class="field-row">
+<div class="field"><label for="bid-email">Email</label><input type="email" id="bid-email" name="email" autocomplete="email" required></div>
+<div class="field"><label for="bid-phone">Phone</label><input type="tel" id="bid-phone" name="phone" autocomplete="tel" required></div>
+</div>
+<div class="field"><label for="bid-amount">Your bid (US dollars)</label><div class="a-amount-field"><span>$</span><input type="text" inputmode="numeric" id="bid-amount" name="amount" autocomplete="off" required></div></div>
+<div class="field"><label class="check"><input type="checkbox" name="terms" id="bid-terms"><span>I have read the auction terms. I understand that a confirmed bid is binding, and that the winner pays through Escrow.com within 7 days of the auction closing.</span></label></div>
+<button class="btn" type="submit">Submit bid</button>
+<div id="bid-status" class="form-status" role="status"></div>
+</form>
+</div>
+<div id="a-closed" class="a-closed" hidden>Bidding is not open right now.</div>
+</div>
+
+<aside class="a-side">
+<h2>What the buyer gets</h2>
+<ul class="a-list">
+<li><strong>The name:</strong> ZionNationalPark.org, an exact-match name for visitors searching for Zion National Park.</li>
+<li><strong>A finished website:</strong> Home, Hikes, When to visit, Stay and tours, Plan your trip, About, Privacy policy, Thank-you and 404 pages. It includes trail guides, a season-by-season planner, lodging and tour guidance, all written for this site.</li>
+<li><strong>Lead capture, already working:</strong> a trip-planning form that delivers requests to the owner's email.</li>
+<li><strong>Design and image files,</strong> and the complete source, ready to host anywhere.</li>
+<li><strong>A clean transfer</strong> of the name and files through Escrow.com.</li>
+</ul>
+<p>It is best suited to tour operators, lodging, outfitters, shuttle and gear-rental businesses, and anyone who earns from Zion visitors.</p>
+
+<h2>How the auction works</h2>
+<ol class="steps">
+<li><strong>The opening bid sets the clock.</strong>The first confirmed bid at or above the minimum starts a 30-day countdown.</li>
+<li><strong>Raise the bid.</strong>Each new bid must beat the high bid by at least $100.</li>
+<li><strong>No last-second wins.</strong>A bid in the final 72 hours moves the close to 72 hours after that bid, so everyone has time to respond.</li>
+<li><strong>Confirm by email.</strong>A bid counts only after you click the link we email you.</li>
+<li><strong>The owner does not bid.</strong>Every bid on this page comes from an outside bidder.</li>
+</ol>
+
+<h2>Terms</h2>
+<p class="fine" style="margin-top:0">A confirmed bid is a binding offer. The highest confirmed bid when the auction closes wins. The winner opens an Escrow.com transaction within 7 days of closing and pays through it. The buyer pays the escrow fee. If the winner does not complete payment, the owner may offer the property to the next-highest bidder. The property transfers when Escrow.com confirms payment. Images on this site are illustrative and may be computer-generated. This is an independent visitor guide and is not affiliated with the National Park Service or any government agency, and no traffic, revenue, or search-ranking figures are claimed or implied.</p>
+
+<form id="ask-form" class="ask-form" novalidate>
+<h3>Ask a question</h3>
+<div class="hp" aria-hidden="true"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></div>
+<div class="field"><label for="ask-email">Your email</label><input type="email" id="ask-email" name="email" required></div>
+<div class="field"><label for="ask-msg">Your question</label><textarea id="ask-msg" name="message" required></textarea></div>
+<button class="btn" type="submit">Send question</button>
+<div id="ask-status" class="form-status" role="status"></div>
+</form>
+</aside>
+</div>
+</section>
+
+</main>
+<div class="strata strata--static" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<footer class="site-footer">
+<div class="wrap">
+<div>
+<h2>About this site</h2>
+<p>ZionNationalPark.org is an independent guide to visiting Zion National Park in southwest Utah. It is not the official park website. For alerts, permits, fees, and maps, use <a href="https://www.nps.gov/zion" rel="noopener">nps.gov/zion</a>.</p>
+</div>
+<div>
+<h2>Explore</h2>
+<ul>
+<li><a href="hikes.html">Hikes</a></li>
+<li><a href="when-to-visit.html">When to visit</a></li>
+<li><a href="plan-your-stay.html">Stay and tours</a></li>
+<li><a href="plan-your-trip.html">Plan my trip</a></li>
+</ul>
+</div>
+<div>
+<h2>Official sources</h2>
+<ul>
+<li><a href="https://www.nps.gov/zion" rel="noopener">National Park Service: Zion</a></li>
+<li><a href="https://www.recreation.gov" rel="noopener">Recreation.gov permits and campsites</a></li>
+<li><a href="about.html">About this guide</a></li>
+<li><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+</div>
+<div class="legal"><div class="wrap">
+<p>Information was last reviewed in October 2026. Conditions, trail access, permits, and fees change, so confirm details with the National Park Service before you travel. Images are illustrative and may be computer-generated.</p>
+<p>&copy; <span id="year">2026</span> ZionNationalPark.org. Zion National Park is a unit of the National Park Service.</p>
+</div></div>
+</footer>
+</body>
+</html>
