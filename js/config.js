@@ -14,7 +14,7 @@
 window.SITE_CONFIG = {
   WEB3FORMS_ACCESS_KEY: "5e5a9349-03aa-4682-894f-dfc1ca966eef",
   GOOGLE_ANALYTICS_ID: "",
-  AUCTION_API: "",
+  AUCTION_API: "https://auction-service-pzz0.onrender.com",
   AUCTION_ID: "zionnationalpark.org",
   SITE_NAME: "ZionNationalPark.org"
 };
